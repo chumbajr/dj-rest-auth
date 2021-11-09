@@ -176,7 +176,7 @@ class UserDetailsSerializer(serializers.ModelSerializer):
             extra_fields.append('last_name')
         model = UserModel
         fields = ('pk', *extra_fields)
-        read_only_fields = ('email',)
+        read_only_fields = ('email','username')
 
 
 class JWTSerializer(serializers.Serializer):
